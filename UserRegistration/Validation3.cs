@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace UserRegistration
 {
-    internal class Validation2
+    internal class Validation3
     {
         public string FirstName = ("^[A-Z]{1}[A-Za-z]{3,}$");
         public string LastName = ("^[A-Z]{1}[A-Za-z]{3,}$");
         public string Email = ("^[A-Za-z]{3,}@[a-z]{3,}.[a-z]{3,}$");
+        public string PhoneNumber = ("^[0-9]{1,10}$");
 
         public void ValidateFirstName(string firstName)
         {
@@ -33,6 +34,14 @@ namespace UserRegistration
                 Console.WriteLine("Valid Email_ID");
             else
                 Console.WriteLine("Invalid Email_ID");
+        }
+
+        public void Phonenumber(string Phone_Number)
+        {
+            if (Regex.IsMatch(Phone_Number, PhoneNumber))
+                Console.WriteLine("Valid Phone_Number");
+            else
+                Console.WriteLine("Invalid Phone_Number");
         }
     }
 }
