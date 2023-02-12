@@ -25,23 +25,20 @@ namespace UserRegistration
             Console.WriteLine("Enter The Email_ID: ");
             string EmailID = Console.ReadLine();
             person2.EmailID(EmailID);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 
->>>>>>> UC4_UserPhoneNumber
             //UC4
             Validation3 person3 = new Validation3();
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("Enter The Phone_Number: ");
             string Phone_Number = Console.ReadLine();
             person3.Phonenumber(Phone_Number);
-<<<<<<< HEAD
->>>>>>> UC4_UserPhoneNumber
-=======
 
->>>>>>> UC4_UserPhoneNumber
+            //UC5
+            Validation4 person4 = new Validation4();
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Password: ");
+            string Password = Console.ReadLine();
+            person4.Password(Password);
         }
     }
 }
