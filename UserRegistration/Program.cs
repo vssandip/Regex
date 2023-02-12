@@ -1,4 +1,6 @@
-﻿namespace UserRegistration
+﻿using System;
+
+namespace UserRegistration
 {
     internal class Program
     {
@@ -10,6 +12,12 @@
             Console.WriteLine("Enter The First Name: ");
             string firstName = Console.ReadLine();
             person.ValidateFirstName(firstName);
+            //UC2
+            Validation1 person1 = new Validation1();
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Last Name: ");
+            string lastName = Console.ReadLine();
+            person1.ValidLastName(lastName);
         }
     }
 }
