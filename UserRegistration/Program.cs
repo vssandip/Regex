@@ -25,6 +25,15 @@ namespace UserRegistration
             Console.WriteLine("Enter The Email_ID: ");
             string EmailID = Console.ReadLine();
             person2.EmailID(EmailID);
+<<<<<<< HEAD
+=======
+            //UC4
+            Validation3 person3 = new Validation3();
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Phone_Number: ");
+            string Phone_Number = Console.ReadLine();
+            person3.Phonenumber(Phone_Number);
+>>>>>>> UC4_UserPhoneNumber
         }
     }
 }
