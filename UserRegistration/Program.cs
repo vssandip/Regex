@@ -39,6 +39,14 @@ namespace UserRegistration
             Console.WriteLine("Enter The Password: ");
             string Password = Console.ReadLine();
             person4.Password(Password);
+
+            //UC6
+            Validation5 person5 = new Validation5();
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Password: ");
+            string Password1 = Console.ReadLine();
+            person5.Password1(Password);
+
         }
     }
 }
